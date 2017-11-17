@@ -8,6 +8,7 @@ namespace SimpleWebAPI.Controllers
     {
         private readonly IPersonService _personService;
 
+        // http://structuremap.github.io/integrations/
         public PersonController(IPersonService personService)
         {
             _personService = personService;
