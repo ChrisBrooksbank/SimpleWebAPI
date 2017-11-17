@@ -86,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -102,8 +103,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SImpleWebAPI.Domain\SimpleWebAPI.Domain.csproj">
+      <Project>{1F0D20CB-4629-4B77-AF50-D29C588D6028}</Project>
+      <Name>SimpleWebAPI.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleWebAPI.Services\SimpleWebAPI.Services.csproj">
+      <Project>{1845B723-0644-4B0C-AC3C-32DC6EFAB83F}</Project>
+      <Name>SimpleWebAPI.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
